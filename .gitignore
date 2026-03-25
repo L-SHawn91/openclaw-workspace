@@ -1,17 +1,39 @@
-# Secret files
-memory/
-.openclaw/workspace-state.json
+# Secrets
+.secrets/
+**/*.env
+**/*.env.local
+**/api_keys.env
+**/kaggle.json
 
-# Environment
-.env
-*.env
+# Runtime / cache
+_logs/
+**/__pycache__/
+**/*.pyc
+**/.DS_Store
 
-# OS
-.DS_Store
-Thumbs.db
+# Temp / staging
+_staging/
+tmp_*/
+**/tmp/
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
+# Virtual envs and deps
+venv/
+.venv/
+node_modules/
+
+# Large artifacts
+*.zip
+*.tar
+*.tar.gz
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.docx
+*.xlsx
+*.rds
+*.h5ad
+*.loom
+
+# Keep encrypted secret bundles if needed
+!**/*.env.enc
